@@ -1,0 +1,104 @@
+.App {
+  text-align: center;
+}
+
+/***************************************************************************************/
+body {
+  background-color: #350106e5 !important;
+}
+.wrapper {
+  background-color: #fdd9c5;
+  border-radius: 0.7em;
+}
+
+/* .login {
+  margin: 7.5em 12em 0em 12em;
+} */
+.login,
+.register,
+.resetPassword {
+  margin: 9em 0em;
+}
+
+.loginbtn {
+  float: left;
+  background-color: #350106e5 !important;
+}
+.message {
+  float: left;
+  font-size: 14px;
+  margin-left: -8.4em;
+}
+
+/* .form-floating > .form-control,
+.form-floating > .form-select {
+  height: 3em !important;
+} */
+
+.entryform {
+  background-color: #fdd9c5 !important;
+}
+.entry {
+  border-radius: 0rem !important;
+}
+
+.journal {
+  background-color: #f8c9af;
+}
+
+.card {
+  background-color: #fdd9c5 !important;
+}
+.savebtn {
+  margin-bottom: -6em;
+  color: black !important;
+  text-decoration: underline !important;
+  margin-left: 39em;
+}
+.navbar {
+  background-color: #461111 !important;
+}
+
+a.nav-link {
+  padding: 0em 0.8em !important;
+}
+.newentrybtn {
+  background-color: #350106e5 !important;
+}
+
+textarea {
+  resize: none !important;
+}
+
+.Card {
+  transition: transform 200ms ease-in;
+  box-shadow: 0 2px 10px #490707;
+}
+.Card:hover {
+  transform: scale(1.02) !important;
+  cursor: pointer !important;
+}
+
+.form-floating > .form-control,
+.form-floating > .form-select {
+  height: 3.3em !important;
+}
+
+.form-floating > label {
+  padding: 0.8rem 0.75rem !important;
+}
+.save-new-entry {
+  margin-bottom: -5em !important;
+  font-size: 15px !important;
+  float: right;
+  margin-right: 3em !important;
+  margin-top: 1em;
+}
+
+.form-control {
+  border-radius: 0 !important;
+}
+
+.date-picker {
+  width: 12% !important;
+}
