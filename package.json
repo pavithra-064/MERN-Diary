@@ -15,7 +15,9 @@
   "main": "app.js",
   "scripts": {
     "start": "node app.js",
-    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install npm && run build"
+    "build": "cd client && npm run build",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install npm && run build",
+    "client": "cd client && npm start"
   },
   "engines": {
     "node": "16.16.0",
