@@ -15,6 +15,7 @@
     "react-cookie": "^4.1.1",
     "react-date-picker": "^8.4.0",
     "react-datepicker": "^4.7.0",
+    "react-dom": "^18.2.0",
     "react-native": "^0.67.3",
     "react-navigation": "^4.4.4",
     "react-router": "^6.2.1",
