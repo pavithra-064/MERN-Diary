@@ -1,8 +1,7 @@
-const express = require('express');
-const mongoose = require('mongoose');
-var cors = require('cors');
+const express = require("express");
+const mongoose = require("mongoose");
+var cors = require("cors");
 //  var bodyparser = require('body-parser');
-
 
 // Express app initialization
 const app = express();
@@ -11,14 +10,18 @@ const app = express();
 
 app.use(cors());
 
-
+const PORT = process.env.PORT || 3000;
 // Mongo Atlas Connection
-const mongoURI = "mongodb+srv://webdevskp:papo2123@cluster0.okfjq.mongodb.net/diary-db?retryWrites=true&w=majority";
-mongoose.connect(mongoURI, { useNewUrlParser : true, useUnifiedTopology: true})
-.then((result) => {app.listen(3000); console.log("Listening at 3000"); // Log to be removed
-})
-.catch((err) => console.log("Error Raised : ", err));
+const mongoURI =
+  "mongodb+srv://webdevskp:papo2123@cluster0.okfjq.mongodb.net/diary-db?retryWrites=true&w=majority";
+mongoose
+  .connect(mongoURI, { useNewUrlParser: true, useUnifiedTopology: true })
+  .then((result) => {
+    app.listen(PORT);
+    console.log(`Listening at ${PORT}`); // Log to be removed
+  })
+  .catch((err) => console.log("Error Raised : ", err));
 
 // Routing
-const api = require('./api/api');
-app.use('/api', api);
+const api = require("./api/api");
+app.use("/api", api);

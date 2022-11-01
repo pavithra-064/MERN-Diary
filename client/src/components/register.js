@@ -122,7 +122,7 @@ const Register = () => {
               <label htmlFor="floatingPasswordCustom5">Confirm Passowrd</label>
             </Form.Floating>
             {!wrongpass && <span className="message">{message}</span>}
-            <Row className="col-lg-3 ps-3">
+            <Row className="col-lg-5 ps-3">
               <Button
                 onClick={(e) => {
                   e.preventDefault();
