@@ -19,7 +19,7 @@
     "react-navigation": "^4.4.4",
     "react-router": "^6.2.1",
     "react-router-dom": "^6.2.1",
-    "react-scripts": "5.0.0",
+    "react-scripts": "^5.0.0",
     "react-show-more-text": "^1.5.2",
     "react-textarea-autosize": "^8.3.3",
     "universal-cookie": "^4.0.4",
