@@ -14,9 +14,13 @@
   "version": "1.0.0",
   "main": "app.js",
   "scripts": {
-    "start": "nodemon app.js"
+    "start": "node app.js",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install npm && run build"
   },
-  "author": "kannangr21",
+  "engines": {
+    "node": "16.16.0"
+  },
+  "author": "pavithra-064",
   "license": "ISC",
   "description": ""
 }
