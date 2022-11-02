@@ -27,7 +27,8 @@
     "server": "node app.js",
     "dev-server": "nodemon index.js",
     "develop": "concurrently --kill-others-on-fail \"npm run server\" \"npm run start --prefix client\"",
-    "start": "concurrently --kill-others-on-fail \"npm run server\" \"npm run start --prefix client\""
+    "start": "concurrently --kill-others-on-fail \"npm run server\" \"npm run start --prefix client\"",
+    "deploy": "npm run build && netlify deploy --prod"
   },
   "author": "pavithra-064",
   "license": "ISC",
