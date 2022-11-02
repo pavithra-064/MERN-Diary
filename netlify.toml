@@ -1,5 +1,5 @@
 [build]	
-    command = "npm build"
+    command = "npm run build"
     build = "build"
 [build.environment]	
     NODE_ENV = "development"	
