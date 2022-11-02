@@ -1,12 +1,12 @@
 import { useNavigate } from "react-router-dom";
 import ShowMoreText from "react-show-more-text";
-import { Container, Row, Button, Card } from "react-bootstrap";
+import { Row, Card } from "react-bootstrap";
 import Cookies from "universal-cookie";
-import { Link } from "react-router-dom";
-import ViewEntry from "./viewEntry";
+// import { Link } from "react-router-dom";
+// import ViewEntry from "./viewEntry";
 
 const Cards = (props) => {
-  const cookies = new Cookies();
+  // const cookies = new Cookies();
   const navigate = useNavigate();
   const setTitle = props.setTitle;
 
@@ -14,7 +14,7 @@ const Cards = (props) => {
   const setDate = props.setDate;
   const date = props.date;
   const setDescription = props.setDescription;
-  const description = props.description;
+  // const description = props.description;
 
   const view = (props) => {
     setTitle(props.title);

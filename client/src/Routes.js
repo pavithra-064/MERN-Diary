@@ -16,7 +16,7 @@ import ViewEntry from "./components/viewEntry";
 // import Forgotpassword from "./components/login/forgotpassword";
 // import Image from "./components/image"
 import { useState } from "react";
-import Cards from "./components/cards";
+// import Cards from "./components/cards";
 
 const App = () => {
   const [email, setEmail] = useState("");

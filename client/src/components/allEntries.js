@@ -1,8 +1,8 @@
 import Navbar from "./navbar";
-import { Container, Row, Button, Card } from "react-bootstrap";
+import { Container, Row, Button } from "react-bootstrap";
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
-import ShowMoreText from "react-show-more-text";
+// import ShowMoreText from "react-show-more-text";
 import Cards from "./cards";
 import Cookies from "universal-cookie";
 import moment from "moment";
@@ -71,6 +71,7 @@ const AllEntries = (props) => {
       axios(config)
         .then(function (response) {
           setUseremail(response.data.user.email);
+          console.log(useremail);
           setUsername(response.data.user.name);
           if (
             response.data.memories === undefined ||
@@ -110,16 +111,16 @@ const AllEntries = (props) => {
     result = allData.filter((item) => {
       return item.date.search(currentdate) !== -1;
     });
-    if (result.length == -0) alert("No entries on this date");
+    if (result.length === -0) alert("No entries on this date");
     else {
       console.log(result);
       setSortedData(result);
       console.log(sortedData);
     }
   };
-  const logout = () => {
-    cookies.remove("uid", { path: "/" });
-  };
+  // const logout = () => {
+  //   cookies.remove("uid", { path: "/" });
+  // };
   return (
     <div>
       <Navbar />

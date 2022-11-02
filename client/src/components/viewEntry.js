@@ -1,9 +1,9 @@
-import { FloatingLabel, Form, Button, Container, Row } from "react-bootstrap";
+import { Form, Container } from "react-bootstrap";
 import Navbar from "./navbar";
-import { useEffect, useState } from "react";
-import DatePicker from "react-datepicker";
+import { useEffect } from "react";
+// import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
-import Cookies from "universal-cookie";
+// import Cookies from "universal-cookie";
 const ViewEntry = ({ title, date, description }) => {
   console.log("values");
 
@@ -12,7 +12,7 @@ const ViewEntry = ({ title, date, description }) => {
   // const [title, setTitle] = useState("");
   // const [description, setDescription] = useState("");
   // const [startDate, setStartDate] = useState(new Date());
-  const cookies = new Cookies();
+  // const cookies = new Cookies();
   //   const saveEntry = () => {
   //     const currentdate = `${
   //       startDate.toString().split(" ")[0]
@@ -60,9 +60,9 @@ const ViewEntry = ({ title, date, description }) => {
       alert("page is fully loaded");
     });
   });
-  const logout = () => {
-    cookies.remove("uid", { path: "/" });
-  };
+  // const logout = () => {
+  //   cookies.remove("uid", { path: "/" });
+  // };
 
   return (
     <div id="newentry">
